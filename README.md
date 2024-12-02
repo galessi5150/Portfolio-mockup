@@ -4,23 +4,23 @@ This repository contains the code for a personal portfolio website designed to s
 
 Table of Contents
 
--Project Title
+  -Project Title
 
--Description
+  -Description
 
--Features
+  -Features
 
--How to Use
+  -How to Use
 
--Technologies
+  -Technologies
 
--Collaborators
+  -Collaborators
 
--License
+  -License
 
--Project Title
+  -Project Title
 
--Personal Portfolio Website
+  -Personal Portfolio Website
 
 Description
 
@@ -32,47 +32,47 @@ A list of featured projects with descriptions and links to source code.
 A contact form integrated with the Web3Forms API for handling submissions.
 The site is designed with accessibility and simplicity in mind, offering a user-friendly interface and responsive layout.
 
-Features
+Features:
 
--Responsive Design: The website adapts to different screen sizes (mobile, tablet, desktop).
+  -Responsive Design: The website adapts to different screen sizes (mobile, tablet, desktop).
 
--Navigation: An easy-to-use navigation menu linking the Home, Projects, and Contact pages.
+  -Navigation: An easy-to-use navigation menu linking the Home, Projects, and Contact pages.
 
--Contact Form: Visitors can submit inquiries or feedback using a form integrated with the Web3Forms API.
+  -Contact Form: Visitors can submit inquiries or feedback using a form integrated with the Web3Forms API.
 
--Social Media Links: Direct links to social media profiles.
+  -Social Media Links: Direct links to social media profiles.
 
 How to Use
 
-Prerequisites
+  Prerequisites:
 
--A modern web browser (Chrome, Firefox, Edge, etc.).
+    -A modern web browser (Chrome, Firefox, Edge, etc.).
 
--An internet connection (for accessing external services like the Web3Forms API).
+    -An internet connection (for accessing external services like the Web3Forms API).
+    
+Instructions:
 
-Instructions
+  -Clone or download the repository.
 
--Clone or download the repository.
+  -Open index.html, projects.html, and contact.html in a browser.
 
--Open index.html, projects.html, and contact.html in a browser.
+  -The contact form is functional and will submit data via the Web3Forms API when the name, email, and message fields are completed.
 
--The contact form is functional and will submit data via the Web3Forms API when the name, email, and message fields are completed.
+  Note: Ensure the access key in the JavaScript file is replaced with a valid Web3Forms API key before deployment.
 
-Note: Ensure the access key in the JavaScript file is replaced with a valid Web3Forms API key before deployment.
+Technologies:
 
-Technologies
+  -HTML5: Used for structuring the content of the pages.
 
-HTML5: Used for structuring the content of the pages.
+  -CSS3: Used for styling the website.
 
-CSS3: Used for styling the website.
+  -JavaScript: Used for handling form submissions and dynamically populating the access key.
 
-JavaScript: Used for handling form submissions and dynamically populating the access key.
-
-Web3Forms API: Used for processing the contact form submissions.
+  -Web3Forms API: Used for processing the contact form submissions.
 
 Collaborators:
 
--Gavin Alessi
+  -Gavin Alessi
 
 License
 
