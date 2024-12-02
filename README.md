@@ -52,11 +52,11 @@ How to Use
     
 Instructions:
 
-  -Clone or download the repository.
+    -Clone or download the repository.
 
-  -Open index.html, projects.html, and contact.html in a browser.
+    -Open index.html, projects.html, and contact.html in a browser.
 
-  -The contact form is functional and will submit data via the Web3Forms API when the name, email, and message fields are completed.
+    -The contact form is functional and will submit data via the Web3Forms API when the name, email, and message fields are completed.
 
   Note: Ensure the access key in the JavaScript file is replaced with a valid Web3Forms API key before deployment.
 
