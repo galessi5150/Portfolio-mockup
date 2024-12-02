@@ -1,0 +1,125 @@
+/* Set default text color and font family for the entire page */
+* {
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header styles with a fixed position, background, and blur effect */
+header {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Navigation list styling */
+nav ul {
+  display: inline-flex;
+  list-style-type: none;  
+}
+
+/* Spacing between navigation items */
+nav li {
+    padding-right: 60px;
+}
+
+/* Styling navigation links */
+nav a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: rgb(208, 0, 128);
+    transition: .3s;
+}
+
+/* Body background and margin settings */
+body {
+    background-color: rgb(0, 1, 10);
+    margin: 0;
+}
+
+/* Center body content with additional margins for top and sides */
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* Form container styling with padding and maximum width */
+form {
+    background: rgb(237, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 4vw;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Form heading color */
+form h1 {
+    color: black;
+}
+
+/* Styling input and textarea fields inside the form */
+form input, form textarea {
+    border: 0;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background: rgb(38, 45, 57);
+    font-size: 16px;
+    border-radius: 10px;
+    color: whitesmoke;
+    width: 90%;
+}
+
+form textarea::placeholder {
+    text-align: center;
+}
+
+/* Placeholder text color for form fields */
+form ::placeholder {
+    color: darkgray;
+}
+
+/* Button styling inside the form */
+form button {
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    margin-top: 20px auto 0;
+}
+
+/* Hover effect for the button */
+form button:hover {
+    cursor: pointer;
+    background: black;
+    transition: .5s;
+    color: white;
+}

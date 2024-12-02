@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Set character encoding and viewport settings for responsiveness -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Link to external CSS file for styling -->
+        <link href="contact.css" rel="stylesheet">
+        
+        <!-- Title of the page -->
+        <title>Contact Me</title>
+    </head>
+
+    <!-- Header section containing navigation links -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../Home/home.html">Home</a></li> <!-- Link to Home page -->
+                <li><a href="../Projects/projects.html">Projects</a></li> <!-- Link to Projects page -->
+                <li><a href="#">Contact</a></li> <!-- Link to current Contact page -->
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <!-- Contact form to submit feedback or inquiries -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <h1>Contact Me</h1> <!-- Form title -->
+
+            <!-- Hidden input for access key (used for form submission) -->
+            <input type="hidden" id="accessKey" name="access_key" value="">
+
+            <!-- Input fields for user name, email, and message -->
+            <input type="text" name="first_name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="8" columns="8" placeholder="Leave Feedback about the site, job inquiries, or anything else you might need me for." required></textarea>
+
+            <!-- Submit button to send the form -->
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Script to set the access key dynamically for form submission -->
+        <script>
+            document.getElementById('accessKey').value = 'web3formacesskey';
+        </script>
+    </body>
+</html>

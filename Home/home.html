@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags for character set and viewport settings -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the webpage -->
+        <title>Your Name's Portfolio</title>
+        <!-- Link to external CSS stylesheet -->
+        <link href="home.css" rel="stylesheet">
+        <!-- Link to external JavaScript file (deferred execution) -->
+        <script src="home.js" defer></script>
+    </head>
+
+    <header>
+        <!-- Navigation bar with links -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <section class="poster-Pic">
+            <!-- Display name and job title -->
+            <h1 class='name'>Your Name</h1>
+            <h1 class='job'>Your Job Title</h1>
+            <!-- Watermark image credit -->
+            <h1 class='watermark'>Photo By: Photographer Name</h1>
+            <div class='arrow'>
+                <!-- Arrow image for visual effect -->
+                <img src="../Images/Full-Arrow.png" class="arrowimg" alt="Arrow">
+            </div>
+            <!-- Main profile image -->
+            <img src="../Images/Placeholder.jpg" alt="Profile Picture">
+        </section>
+
+        <main>
+            <section class="about-Me">
+                <div class="about-Me-Text">
+                    <h1>Hello World! I'm [Your Name] 👨‍💻</h1>
+                    <p>
+                        Brief introduction (e.g., "I'm a web developer from [Your Location]. I specialize in ...").
+                    </p>
+                    <p>
+                        Additional info or hobbies (e.g., "In my free time, I enjoy ...").
+                    </p>
+                    <div class='important-Links'>
+                        <!-- Link to download resume -->
+                        <a class='resume-Button' download="Your Name's Resume" href="../Images/Gmail-Light.png">
+                            Resume <img src="../Images/Resume-ClipArt-Light.png" alt="Resume">
+                        </a>
+                        <div class='link-Icons'>
+                            <!-- Social media icons with links -->
+                            <a href='https://www.linkedin.com/in/yourlinkedin' title='LinkedIn' target='_blank'>
+                                <img src='../Images/Linkden-Light.png' class='linkden' alt="LinkedIn">
+                            </a>
+                            <a href='https://github.com/yourgithub' title='GitHub' target='_blank'>
+                                <img src='../Images/Github-Light.png' class='Github' alt="GitHub">
+                            </a>
+                            <a href='mailto:youremail@example.com' title='Email' target='_blank'>
+                                <img src='../Images/Gmail-Light.png' class='Gmail' alt="Gmail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='about-Me-Image'>
+                    <img src="../Images/Placeholder.jpg" alt="About Me">
+                </div>
+            </section>
+
+            <section class='work-education'>
+                <div class='work-ed-selector'>
+                    <p class='workselector'>Work</p>
+                    <p class='educationselector'>Education</p>
+                </div>
+
+                <!-- Work experience section -->
+                <div class='work-card'>
+                    <ul>
+                        <li class='workTitle'>
+                            Job Title | Location
+                            <p class='date'>Start Date - End Date</p>
+                            <ul class="workInfo">
+                                <li>Key responsibility or achievement.</li>
+                                <li>Another responsibility or achievement.</li>
+                            </ul>
+                        </li>
+                        <!-- Additional work entries can be added here -->
+                    </ul>
+                </div>
+
+                <!-- Education section -->
+                <div class="education card">
+                    <ul>
+                        <li class='edTitle'>
+                            Institution Name | Location
+                            <p class='date'>Graduation Date</p>
+                            <ul class="edInfo">
+                                <li>Degree or Program</li>
+                                <li>Relevant achievement or GPA</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class='projects'>
+                <div class='project-Header'>
+                    <h2>Featured Projects</h2>
+                    <a href="../projects/projects.html">See More →</a>
+                </div>
+
+                <div class='featured-Projects-Cards'>
+                    <!-- Project 1 -->
+                    <div class='featured-project'>
+                        <img src='../Images/Placeholder.jpg' alt="Project 1">
+                        <h3>Project Title 1</h3>
+                        <p>Brief project description.</p>
+                        <div class='skills-used'>
+                            <p>Skill 1</p>
+                            <p>Skill 2</p>
+                        </div>
+                        <a href="project1-link" class='project-code' target='_blank'>
+                            Source Code <img src='../Images/Github-Light.png' alt="GitHub">
+                        </a>
+                    </div>
+                    <!-- Additional projects can be added here -->
+                </div>
+            </section>
+
+            <footer>
+                <div class='footer-header'>
+                    <h3>In case you missed them!</h3>
+                </div>
+                <div class='link-Icons'>
+                    <a href='https://www.linkedin.com/in/yourlinkedin' title='LinkedIn' target='_blank'>
+                        <img src='../Images/Linkden-Light.png' class='linkden' alt="LinkedIn">
+                    </a>
+                    <a href='https://github.com/yourgithub' title='GitHub' target='_blank'>
+                        <img src='../Images/Github-Light.png' class='Github' alt="GitHub">
+                    </a>
+                    <a href='mailto:youremail@example.com' title='Email' target='_blank'>
+                        <img src='../Images/Gmail-Light.png' class='Gmail' alt="Gmail">
+                    </a>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

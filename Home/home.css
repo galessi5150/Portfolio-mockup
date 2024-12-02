@@ -1,0 +1,451 @@
+/* General styles */
+* {
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* Header and navigation styles */
+header {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 60px;
+    display:flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+nav {
+  width: 1625px;
+  display: inline-flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding-right: 60px;
+}
+
+nav a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: rgb(208, 0, 128);
+    transition: .3s;
+}
+
+
+/* Body and poster image */
+body {
+    background-color: rgb(0, 1, 10);
+    margin: 0;
+}
+
+.poster-Pic img{
+    margin: 0px;
+    width: 100%;
+    height: 975px;
+
+}
+
+
+/* Text styling for name, job, watermark */
+
+.name {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 70px;
+    z-index: 1;
+    background-color: none;
+    text-shadow: 1px 1px 1px black;
+}
+
+.job {
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    font-size: 70px;
+    z-index: 1;
+    text-shadow: 1px 1px 1px black;
+}
+
+.watermark {
+    color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 7px;
+    font-size: 2px;
+    z-index: 1;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/* Arrow and about section styles */
+.arrow img{
+    width: 150px;
+    height: auto;
+    opacity: .6;
+}
+
+.arrowimg {
+    position: absolute; 
+    bottom: -10px;
+    left: 48%;
+    z-index: 2; 
+}
+
+.about-Me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.about-Me-Text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about-Me-Text h1{
+    font-size: 50px;
+}
+
+.about-Me-Text p{
+    font-size: 22px;
+}
+
+.about-Me-Text a{
+    color: darkgray;
+    transition: .3s;
+}
+
+.about-Me-Text a:hover{
+    color: white;
+    transition: .3s;
+}
+
+.important-Links {
+    display: inline-flex;
+}
+
+.important-Links a{
+    background: none;
+    border: 1px solid gray;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.important-Links a:hover {
+    cursor: pointer;
+    background: gray;
+    transition: .5s;
+}
+
+.resume-Button img{
+    height: 25px;
+    width: 25px;
+}
+
+.link-Icons {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-Icons a{
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+}
+
+.link-Icons a:hover {
+    background: none;
+    transition: .5;
+    cursor: pointer;
+}
+
+.link-Icons img{
+    width: 35px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.about-Me-Image {
+    margin-left: 50px;
+}
+
+.about-Me-Image img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Work and education styles */
+.work-education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.work-ed-selector {
+    background-color: rgb(32, 41, 55);
+    width: 80%;
+    height: 50px; 
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;  
+}
+
+.workselector {
+    width: 45%;
+    text-align: center;
+    color: gray;
+    margin-right: 2.5%;
+}
+
+.educationselector {
+    width: 45%;
+    text-align: center;
+    color: gray;
+    margin-right: 2.5%;
+}
+
+.workselector:hover,  .educationselector{
+    cursor: pointer;
+}
+
+.work-card, .education.card {
+    display: none; 
+}
+
+
+.work-card.active, .education.card.active {
+    display: block; 
+}
+
+.work-ed-selector .selected {
+    background-color: black;
+    color: white;
+    height: 40px; 
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.work-card, .education.card {
+    margin: 20px auto; 
+    width: 45%; 
+    border: 2px solid rgb(32, 41, 55);
+    padding: 20px; 
+    border-radius: 10px; 
+    color: white; 
+}
+
+.education.card {
+    position: relative;
+    padding-left: 30px; 
+}
+
+.education.card  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 57px;
+    width: 2px; 
+    height: 100%; 
+    background-color: gray; 
+    z-index: -1; 
+}
+
+.edTitle {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.date {
+    color: darkgray;
+    margin-top: 0;  
+    padding: 0;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.edInfo li{
+    color: lightgray;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+
+.work-card {
+    position: relative;
+    padding-left: 30px; 
+}
+
+.work-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 57px;
+    width: 2px; 
+    height: 100%; 
+    background-color: gray; 
+    z-index: -1; 
+}
+
+.workTitle {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.date {
+    color: darkgray;
+    margin-top: 0;  
+    padding: 0;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.workInfo li{
+    color: lightgray;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.project-Header {
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-Header a {
+    color: gray;
+    text-decoration: none;
+    transition: .3s;
+}
+
+/* Project header and footer styles */
+
+.project-Header a:hover{
+    color: white;
+    transition: .3s;
+}
+
+.featured-Projects-Cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.featured-project {
+    border: 2px solid rgb(32, 41, 55);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: auto;
+}
+
+.featured-project img {
+    width: 350px;
+    height: auto;
+    margin: 20px 30px;
+}
+
+
+.featured-project p, .featured-project h3 {
+    margin-left: 20px;
+}
+
+.skills-used {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.skills-used p{
+    background-color: rgb(32, 41, 55);
+    color: lightgray;
+    border-radius: 3px;
+}
+
+.project-code img {
+    height: 20px;
+    width: 30px;
+    margin: 0px;
+}
+
+.featured-project a {
+    background-color: rgb(32, 41, 55);
+    color: lightgray;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 30px;
+    width: 150px;
+}
+
+.featured-project a:hover {
+    background-color: darkgray;
+    color: white;
+    transition: .3s;
+}
+
+
+/* Footer styling */
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
